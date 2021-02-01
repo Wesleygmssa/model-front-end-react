@@ -1,7 +1,14 @@
 import React from 'react';
+import Login from './pages/Login';
+import GlobalStyle, { Container } from './styles/Global';
 
 function App() {
-  return <h1>Olá mundo</h1>;
+  return (
+    <Container>
+      <GlobalStyle />
+      <Login />
+    </Container>
+  );
 }
 
 export default App;
