@@ -1,9 +1,13 @@
 import React from 'react';
 import { FaHome, FaSignInAlt, FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { Nav } from './styles';
 
 export default function Header() {
+  // eslint-disable-next-line no-console
+  // eslint-disable-next-line no-unused-vars
+  const botaoClicado = useSelector((state) => state.botaoClicado);
   return (
     <Nav>
       <Link to="/">
