@@ -1,11 +1,12 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import Login from '../pages/Login';
 import Page404 from '../pages/Page404';
-
+import MyRute from './MyRoute';
+//
 export const Routes = () => (
   <Switch>
-    <Route exact path="/" component={Login} />
-    <Route path="?*" component={Page404} />
+    <MyRute exact path="/" component={Login} isClosed />
+    <MyRute path="*" component={Page404} />
   </Switch>
 );
