@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 // rota privada
 // eslint-disable-next-line react/prop-types
 export default function MyRoute({ component: Component, isClosed, ...rest }) {
-  const isLoggedId = false;
+  const isLoggedId = true;
 
   if (isClosed && !isLoggedId) {
     return (
