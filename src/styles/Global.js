@@ -5,9 +5,9 @@ export default createGlobalStyle`
 :root {
   --primaryColor: #C3073F;
   --primaryDarkColor: #1A1A1D;
-  --SuccessColor: #0197f5;
+  --successColor:  #e6fffa;
   --infoColor: #0197f6;
-  --errorColor: #F2AF29;
+  --errorColor: #c53030;
   --warningColor: #F2AF29;
 
 }
@@ -46,6 +46,14 @@ export default createGlobalStyle`
 
   ul{
     list-style: none;
+  }
+
+  body .Toastify .Toastify_toast-container .Toastify__toast--success{
+    background: var(--successColor)
+  }
+
+  body .Toastify .Toastify_toast-container .Toastify__toast--error{
+    background: var(--errorColor)
   }
 `;
 
