@@ -21,7 +21,6 @@ export default createGlobalStyle`
   body{
     font-family: sans-serif;
     background: var(--primaryDarkColor);
-    color: var(--primaryColor);
 
   }
 
@@ -58,7 +57,7 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  max-width: 360px;
+  max-width: 560px;
   background: #fff;
   margin: 30px auto;
   padding: 30px;
